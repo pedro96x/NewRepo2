@@ -1,0 +1,33 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Entidades
+{
+    public class DocenteCurso : BusinessEntity
+    {
+        private TiposCargos _Cargo;
+        private int _IDCurso;
+        private int _IDDocente;
+
+        public int IDDocente
+        {
+            get { return _IDDocente; }
+            set { _IDDocente = value; }
+        }
+        public int IDCurso
+        {
+            get { return _IDCurso; }
+            set { _IDCurso = value; }
+        }
+        public TiposCargos Cargo
+        {
+            get { return _Cargo; }
+            set { _Cargo = value; }
+        }
+       
+    }
+
+}
